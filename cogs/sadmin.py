@@ -36,9 +36,9 @@ class SuperAdministration(commands.Cog):
 		
 
 		if [reaction.message.guild.id, reaction.message.channel.id] == reloadlist and member.id != 827459006532157440:
-			url = "https://aquabx.ovh/python_cogs/"
+			url = "https://raw.githubusercontent.com/AquaBx/discord-bot/db4679fb499fb13d365d03e341f3ba75a512e660/"
 			if str(reaction.emoji) == "🔁":	 
-				req = requests.get(url + "files.json").json()
+				req = requests.get(url + "cogs.json").json()
 
 				try:
 					sadmin = coglist.index("sadmin.py")
