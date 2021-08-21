@@ -36,7 +36,7 @@ class SuperAdministration(commands.Cog):
 		
 
 		if [reaction.message.guild.id, reaction.message.channel.id] == reloadlist and member.id != 827459006532157440:
-			url = "https://raw.githubusercontent.com/AquaBx/discord-bot/db4679fb499fb13d365d03e341f3ba75a512e660/"
+			url = "https://raw.githubusercontent.com/AquaBx/discord-bot/main/"
 			if str(reaction.emoji) == "🔁":	 
 				req = requests.get(url + "cogs.json").json()
 
