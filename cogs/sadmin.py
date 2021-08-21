@@ -56,7 +56,7 @@ class SuperAdministration(commands.Cog):
 			
 			for cog in coglist:
 				with open("./cogs/" + cog + ".py","w", encoding='utf8') as fich:
-					nreq = urllib.request.urlopen(url + cog + ".py").read().decode('utf-8')
+					nreq = urllib.request.urlopen(url + "cogs/" + cog + ".py").read().decode('utf-8')
 					fich.write(nreq)
 
 				try:
